@@ -97,14 +97,6 @@ public class AIDemoService
                                     {
                                         resizedFrame = await ImageHelper.ResizeVideoFrameAsync(previewFrame, previewProperties, targetWidth, targetHeight);
                                     }
-                                    if (resizedFrame.SoftwareBitmap != null)
-                                    {
-
-                                        PreviewData = await EncodedBytes(resizedFrame.SoftwareBitmap, BitmapEncoder.JpegEncoderId);
-                                    }
-                                    else
-                                    {
-                                    }
                                     var startTime = DateTime.Now;
                                     DetectResult = await EvaluteImageAsync(resizedFrame);
                                     EvalutionTime = (DateTime.Now - startTime).TotalSeconds.ToString();

@@ -30,12 +30,12 @@ public class GooglePlacesDemo : MonoBehaviour
         {
             m_ResultText.text = demoService.DetectResult;
             m_EvalutionTimeText.text = demoService.EvalutionTime;
-            if (demoService.PreviewData != null && demoService.PreviewData.Length > 0)
-            {
-                var texture = new Texture2D(224, 224);
-                texture.LoadRawTextureData(demoService.PreviewData);
-                m_PreviewMaterial.mainTexture = texture;
-            }
+            //if (demoService.PreviewData != null && demoService.PreviewData.Length > 0)
+            //{
+            //    var texture = new Texture2D(224, 224);
+            //    texture.LoadRawTextureData(demoService.PreviewData);
+            //    m_PreviewMaterial.mainTexture = texture;
+            //}
         }
     }
 }

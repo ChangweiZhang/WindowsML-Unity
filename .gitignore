@@ -33,3 +33,6 @@ sysinfo.txt
 *.apk
 *.unitypackage
 WindowsMLDemo-HoloLens/.vs/WindowsMLDemo-HoloLens/v15/
+WindowsMLDemo-HoloLens/Library/
+WindowsMLDemo-HoloLens/Packages/
+WindowsMLDemo-HoloLens/Temp/
